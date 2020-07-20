@@ -50,5 +50,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+collections:
+  team_members:
+    output: true
+    sort_by: sort_order
 
 
