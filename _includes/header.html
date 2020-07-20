@@ -1,9 +1,18 @@
 <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="{{ site.url }}{{ site.baseurl }}/" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
     AI Research Group @ AGU
   </a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav ml-auto">
+			{% for item in site.data.navigation %}
+			<a class="nav-item nav-link {% if page.url == item.link %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
+			{% endfor %}
+		</div>
+	</div>
 </nav>
 
 <!--
