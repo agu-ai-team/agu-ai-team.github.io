@@ -52,9 +52,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-octicons
 collections:
   team_members:
     output: true
     sort_by: sort_order
+
 
 
