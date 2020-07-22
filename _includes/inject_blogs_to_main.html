@@ -4,7 +4,7 @@
 			<h2 class="blog-post-title">{{ post.title }}</h2>
 			<p class="blog-post-meta"> {{ post.date | date_to_string}}  by {% assign author = site.team_members  | where: "name", post.author | first %}  
 			<a href="{{ author.url}}"> {{ post.author }} </a>
-			<img src="{{ site.url }}{{ site.baseurl }}/{% if author.photo %}{{ author.photo }}{% else %}default.jpg{% endif %}" class="rounded-circle rounded-sm border border-info align-bottom" width="40px" />
+			<img src="{{ site.url }}{{ site.baseurl }}{% if author.photo %}{{ author.photo }}{% else %}default.jpg{% endif %}" class="rounded-circle rounded-sm border border-info align-bottom" width="40px" />
 			{{ post.excerpt }}
 			<a href="{{ post.url }}">Read more...</a>
 			</p>
