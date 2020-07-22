@@ -1,6 +1,6 @@
 ---
 name: "Kasim Tasdemir"
-photo: kasim.jpg # optional. You may leave it blank 
+photo: images/teampic/kasim.jpg # optional. You may leave it blank 
 status: Assistant professor # Professor, Student, ... 
 email: kasim.tasdemir@agu.edu.tr
 phd: School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast, UK, 2015 # optional. You may leave it blank

@@ -5,88 +5,21 @@
 
     {% include inject_navbar.html %}
 
-    {% comment %}
-<!--
-    <div class="container-fluid">
-      {% if site.environment != 'production' %}
+    {% if site.environment != 'production' %}
+    <div class="container">
         <div class="text-danger">
         This website is not ready yet! The information given here is not correct and displayed for test purposes only.
         </div>
-      {% endif %}
-      <div class="row">
-        {{ content }}
-      </div>
     </div>
+    {% endif %}
 
-    {% include footer.html %}
--->
-  {% endcomment %}
-
-  <main role="main" class="container">
-  <div class="row">
-    <div class="col-md-8 blog-main">
-      
-        {% include inject_carousel.html %}
-      
-      <h3 class="pt-4 pb-2 mb-2 font-italic border-bottom">
-        Latest Blog Posts
-      </h3>
-      {% include inject_blogs_to_main.html %}
-
-      <nav class="blog-pagination">
-        <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-      </nav>
-
-    </div><!-- /.blog-main -->
-
-    <aside class="col-md-4 blog-sidebar">
-      <div class="p-4 mb-3 bg-light rounded">
-        <h4 class="font-italic">News</h4>
-        {% include inject_news.html %}
-      </div>
-
-      <div class="p-4">
-        <h4 class="font-italic">Archives</h4>
-        <ol class="list-unstyled mb-0">
-          <li><a href="#">March 2014</a></li>
-          <li><a href="#">February 2014</a></li>
-          <li><a href="#">January 2014</a></li>
-          <li><a href="#">December 2013</a></li>
-          <li><a href="#">November 2013</a></li>
-          <li><a href="#">October 2013</a></li>
-          <li><a href="#">September 2013</a></li>
-          <li><a href="#">August 2013</a></li>
-          <li><a href="#">July 2013</a></li>
-          <li><a href="#">June 2013</a></li>
-          <li><a href="#">May 2013</a></li>
-          <li><a href="#">April 2013</a></li>
-        </ol>
-      </div>
-
-      <div class="p-4">
-        <h4 class="font-italic">Elsewhere</h4>
-        <ol class="list-unstyled">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ol>
-      </div>
-    </aside><!-- /.blog-sidebar -->
-
-  </div><!-- /.row -->
-
-</main>
   <div class="container">
-  
+  {{content}}
+  </div>
+  <div class="container">
       {% include inject_footer.html %}
   </div>
-  <div class="container"> 
-  {% octicon alert height:32 class:"right left" aria-label:hi %}
 
-  Lorem <i class="material-icons  md-24 md-dark">face</i> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Nisi est sit amet facilisis. Fermentum leo vel orci porta non. Vitae et leo duis ut diam quam nulla porttitor massa. Pellentesque id nibh tortor id aliquet. Semper viverra nam libero justo laoreet. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Commodo elit at imperdiet dui accumsan sit. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Tellus cras adipiscing enim eu turpis egestas. Platea dictumst quisque sagittis purus sit amet volutpat. Quam pellentesque nec nam aliquam sem et tortor. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Scelerisque felis imperdiet proin fermentum leo vel orci porta non.
-
-</div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
