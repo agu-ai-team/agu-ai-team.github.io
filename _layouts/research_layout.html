@@ -7,15 +7,22 @@ layout: default
 <h1> Projects </h1>
 
 <h2> Computer Vision </h2>
-{% for project in site.projects %}
-	{% if project.research_area == "CV"%}
-		{% include inject_project_card.html %}
-	{% endif %}
-{% endfor %}
-
+<div class="container-fluid">
+	<div class="row"> 
+	{% for project in site.projects %}
+		{% if project.research_area == "CV"%}
+			{% include inject_project_card.html %}
+		{% endif %}
+	{% endfor %}
+	</div>
+</div>
 <h2> Bioinformatics </h2>
-{% for project in site.projects %}
-	{% if project.research_area == "BI" %}
-		{% include inject_project_card.html %}
-	{% endif %}
-{% endfor %}
+<div class="container-fluid">
+	<div class="row"> 
+	{% for project in site.projects %}
+		{% if project.research_area == "BI"%}
+			{% include inject_project_card.html %}
+		{% endif %}
+	{% endfor %}
+	</div>
+</div>

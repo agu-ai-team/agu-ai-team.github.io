@@ -1,22 +1,26 @@
  <!-- This adds a project card in research page. Before calling this a "project" variable must be assigned from site.projects database -->
-<h3><a href="{{project.url}}">{{- project.title -}}</a></h3>
+<div class="col-md-6 pl-0">
+ <div class="card mb-3">
+ 	<div class="row">
+	    <div class="col-md-4">
+	    	<div class="card-body">
+	      {% if project.front_page_image %}<img src="{{- project.front_page_image -}}" class="card-img img-thumbnail" alt="..." style="object-fit: cover; object-position: center;">{% endif %}
+	  </div>
+	    </div>
+	    <div class="col-md-8">
+	      <div class="card-body">
+	        <h5 class="card-title">{{- project.title -}}</h5>
+	        {% if project.front_page_abstract %} <p class="card-text">{{- project.front_page_abstract -}}</p>{% endif %}
+	        <a href="{{project.url}}" class="btn btn-primary">Read more</a>
+	      </div>
+	    </div>
+	    <div class="col-md-8 ml-auto">
+	    	{% for member_name in project.members %}
+	    		{% include inject_person_name_and_photo.html %}
+			{% endfor %}
+	    </div>
+	</div>
+  </div>
+</div>
 
-	{% for member_name in project.members %}
-	  	{% assign person = site.people | where: "name", member_name | first %}
-	  	{% if person.name %}
-	  		{% include inject_person_name_and_photo.html %}
-	  	{% else %}
-	  		{{- member_name -}}
-	  	{% endif %}
-	  	,
-	{% endfor %}
-	<br>
-	{% if project.front_page_image %}
-		<img src="{{- project.front_page_image -}}" class="rounded img-thumbnail align-top" style="max-width: 200px; max-height: 200px" />
-	{% endif %}
-	
-	{% if project.front_page_abstract %}
-		{{- project.front_page_abstract -}}
-	{% endif %}
-	<a href="{{project.url}}">Read more...</a>
 	
