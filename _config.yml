@@ -54,7 +54,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-octicons
 collections:
-  team_members:
+  people:
+    output: true
+    sort_by: sort_order
+  projects:
     output: true
     sort_by: sort_order
 

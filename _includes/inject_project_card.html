@@ -1,0 +1,22 @@
+ <!-- This adds a project card in research page. Before calling this a "project" variable must be assigned from site.projects database -->
+<h3><a href="{{project.url}}">{{- project.title -}}</a></h3>
+
+	{% for member_name in project.members %}
+	  	{% assign person = site.people | where: "name", member_name | first %}
+	  	{% if person.name %}
+	  		{% include inject_person_name_and_photo.html %}
+	  	{% else %}
+	  		{{- member_name -}}
+	  	{% endif %}
+	  	,
+	{% endfor %}
+	<br>
+	{% if project.front_page_image %}
+		<img src="{{- project.front_page_image -}}" class="rounded img-thumbnail align-top" style="max-width: 200px; max-height: 200px" />
+	{% endif %}
+	
+	{% if project.front_page_abstract %}
+		{{- project.front_page_abstract -}}
+	{% endif %}
+	<a href="{{project.url}}">Read more...</a>
+	

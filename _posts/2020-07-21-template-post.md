@@ -1,12 +1,15 @@
 ---
-tags: CV Kasim Tasdemir
+tags:
+- CV
+- Kasim Tasdemir
+- Bulent Yilmaz
 author: "Kasim Tasdemir"
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "A Template post"
 excerpt_separator: <!--more-->
 ---
 
-**Hello world**, this is my first Jekyll blog post.
+**Hello world**, this is my template blog post.
 
 I hope you like it!
 
