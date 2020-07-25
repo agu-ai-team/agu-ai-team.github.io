@@ -1,9 +1,17 @@
-  <img src="{{ site.url }}{{ site.baseurl }}{% if member.photo %}{{ member.photo }}{% else %}default.jpg{% endif %}" class="img-responsive" width="25%" style="float: left" />
-  <h4><a href="{{ member.url }}">{{ member.name }}</a></h4>
-  <i>{{ member.status }}<br>email: < {{ member.email }} > </i>
-  <ul style="overflow: hidden" class="list-group list-group-flush">
+<div class="card text-center pt-4" style="width: 18rem;">
+  <img class="card-img-top rounded-circle rounded-sm mx-auto d-block shadow bg-white" src="{{ site.url }}{{ site.baseurl }}{% if member.photo %}{{ member.photo }}{% else %}/images/people/default.jpg{% endif %}" alt="Card image cap" 
+  style="
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 9rem;
+  height: 9rem;
+  ">
+  <div class="card-body px-0">
+    <h5 class="card-title">{{ member.name }}</h5>
+    <h6 class="card-subtitle mb-1 text-muted">{{ member.status }}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ member.email }}</h6>
+    <p class="card-text crop-text-2">{{ member.research_interests }} </p>
+    <a href="{{ member.url }}" class="btn btn-primary">View Profile</a>
+  </div>
 
-  {% if member.phd %}<li class="list-group-item"> Phd: {{ member.phd }} </li>{% endif %}
-  <li class="list-group-item"> {{ member.research_interests }} </li>
-
-  </ul>
+</div>

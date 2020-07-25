@@ -1,9 +1,7 @@
-
-
-{% for article in site.data.news limit:9 %}
- <em class="blog-post-meta">{{ article.date }}</em>
-<p class="border-bottom mb-2 crop-text-2">{{ article.headline }}</p>
+{% for post in site.categories.news %}
+	{% if forloop.index <= 9 %}
+		
+		<span class="border-bottom mb-2 crop-text-2"><em class="blog-post-meta">({{ post.date | date_to_string}})</em>{{- post.excerpt -}}<a href="{{ post.url }}"> Read more...</a></span>
+		
+	{% endif %}
 {% endfor %}
-
-<h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
-
