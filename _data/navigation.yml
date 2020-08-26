@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Team
+  link: /group/
+- name: Vacancies
+  link: /vacancies/
+- name: Publications
+  link: /publications/
+- name: Research
+  link: /research/
+- name: Docs
+  link: /documents/

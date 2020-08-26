@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h1>Group Members</h1>
+<h2>Staff</h2>
+<div class="row">
+<div class="card-group container-fluid mx-0 px-0">
+{% assign people = site.people | sort: "sort_order" %}
+{% for member in people  %}
+{% if member.sort_order <= 3 %}
+<div class="p-2 d-flex justify-content-center">
+{% include add_member_info.html %}
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+
+<h2>Graduate Students</h2>
+<div class="row">
+<div class="card-group container-fluid mx-0 px-0">
+{% assign people = site.people | sort: "sort_order" %}
+{% for member in people  %}
+{% if member.sort_order > 3 and member.sort_order <= 5  %}
+<div class="p-2 d-flex justify-content-center">
+{% include add_member_info.html %}
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+
+<h2>Undergraduate Students</h2>
+<div class="row">
+<div class="card-group container-fluid mx-0 px-0">
+{% assign people = site.people | sort: "sort_order" %}
+{% for member in people  %}
+{% if member.sort_order > 5 %}
+<div class="p-2 d-flex justify-content-center">
+{% include add_member_info.html %}
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+

@@ -6,6 +6,8 @@ source 'https://rubygems.org'
 gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 
+gem 'bootstrap', '~> 4.5.0'
+gem 'jekyll-octicons'
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
