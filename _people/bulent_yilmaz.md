@@ -8,4 +8,4 @@ research_interests: "Biomedical signal and image processing, neural signal analy
 sort_order: 1 # Prof: 1, Assoc. Prof: 2, Assist. Prof.: 3, PhD student: 4, MSc student: 5, Undergrad student: 6
 layout: profile_layout
 ---
-PhD School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast, UK, 2015
+## Bio
