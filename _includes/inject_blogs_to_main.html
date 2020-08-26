@@ -1,8 +1,9 @@
 {% for post in site.categories.blog %}
 	{% if forloop.index <= 3 %}
-		<div class="blog-post">
+		<div class="blog-post border-bottom">
+			<p class="blog-post-meta mb-0"> {{ post.date | date_to_string}}</p>
 			<h2 class="blog-post-title">{{ post.title }}</h2>
-			<p class="blog-post-meta"> {{ post.date | date_to_string}}  by {% assign author = site.people  | where: "name", post.author | first %}  
+			<p class="blog-post-meta">by {% assign author = site.people  | where: "name", post.author | first %}  
 			<a href="{{ author.url}}"> {{ post.author }} </a>
 			<img src="{{ site.url }}{{ site.baseurl }}{% if author.photo %}{{ author.photo }}{% else %}default.jpg{% endif %}" class="rounded-circle rounded-sm border border-info align-bottom" width="40px" />
 			{{ post.excerpt }}

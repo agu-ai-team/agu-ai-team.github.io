@@ -23,3 +23,6 @@ You can email one of us or ai@agu.edu.tr. State briefly why you are interested a
 ### Undergraduate projects for AGU students
 If you are an undergraduate student at AGU looking for a capstone project, contact ai@agu.edu.tr (or any group member).
 
+### Academics at AGU
+You are more than welcome if you are an academic at AGU and want to join AI research team as a member. Please email to ai@agu.edu.tr.
+
