@@ -6,12 +6,7 @@ sitemap: false
 permalink: /publications/
 ---
 
-
 # Publications
-
-## Group highlights
-
-## Full List
 
 {% for publi in site.data.publication_list %}
 

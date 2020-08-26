@@ -1,9 +1,9 @@
  <!-- This adds name and photo of the person. Before calling this a "member_name" string variable must be assigned -->
 {% assign person = site.people | where: "name", member_name | first %}
- <figure class="figure p-2 text-center">
-  <img src="{{ site.url }}{{ site.baseurl }}{% if person.photo %}{{ person.photo }}{% else %}/images/people/default.jpg{% endif %}" class="figure-img img-fluid rounded-circle rounded-sm" alt="..." 
+<figure class="figure p-2 text-center">
+<img src="{{ site.url }}{{ site.baseurl }}{% if person.photo %}{{ person.photo }}{% else %}/images/people/default.jpg{% endif %}" class="figure-img img-fluid rounded-circle rounded-sm" alt="..." 
   style="object-fit: cover; object-position: center; /* Center the image within the element */
   width: 60px;
   max-height: 60px;">
-  <figcaption class="figure-caption text-center">{% if person.url %}<a href="{{ person.url}}">{% if person.name %}{{-person.name-}}{% endif %}</a>{% else %}{{-member_name-}}{% endif %}</figcaption>
-</figure>
+<figcaption class="figure-caption text-center">{% if person.url %}<a href="{{ person.url}}">{% if person.name %}{{-person.name-}}{% endif %}</a>{% else %}{{-member_name-}}{% endif %}
+</figcaption></figure>
