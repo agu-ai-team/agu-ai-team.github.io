@@ -15,8 +15,8 @@ url: "https://agu-ai-team.github.io"
 
 # Change environment to production before deploying.  
 # If it is "development", google analytics wont work, a warning will appear on top.
-environment: development
-# environment: production
+# environment: development
+environment: production
 
 include:
   - .htaccess
