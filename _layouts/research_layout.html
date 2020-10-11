@@ -14,7 +14,7 @@ Funded projects are listes below:
 	{% if first_project_in_category.research_area %}
 	<h2> {{ category.full_name }}</h2>
 	<div class="container-fluid">
-		<div class="row row-cols-1 row-cols-sm-2"> 
+		<div class="row row-cols-1 row-cols-lg-2"> 
 		{% for project in projects_in_category %}
 			{% include inject_project_card.html %}
 		{% endfor %}
