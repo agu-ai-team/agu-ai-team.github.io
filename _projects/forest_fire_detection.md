@@ -1,5 +1,6 @@
 ---
 research_area: CV # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
+type: research # project: This is a funded project., research: this is a research or thesis
 title: "Forest Fire Detection"
 front_page_image: /images/pubpic/DomePub.png # optional. You may leave it blank 
 members:
