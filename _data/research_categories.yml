@@ -1,0 +1,12 @@
+research_areas:
+- abbr: CV
+  full_name: Computer Vision
+- abbr: BI
+  full_name: Bioinformatics
+- abbr: ML
+  full_name: Machine Learning
+- abbr: NT
+  full_name: Network
+types:
+  - research
+  - project

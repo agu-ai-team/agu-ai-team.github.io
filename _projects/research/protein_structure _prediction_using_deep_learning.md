@@ -2,7 +2,7 @@
 research_area: BI # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
 type: research # project: This is a funded project., research: this is a research or thesis
 title: "Protein Structure Prediction Using Deep Learning"
-front_page_image: /images/pubpic/SCAUweb.jpg # optional. You may leave it blank 
+front_page_image: /images/projects/protein_structure.png # optional. You may leave it blank 
 members:
 - Yasin Gormez
 - Zafer Aydin

@@ -2,7 +2,7 @@
 research_area: BI # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
 type: research # project: This is a funded project., research: this is a research or thesis
 title: "Network Embedding for Biological Networks"
-front_page_image: /images/pubpic/Pub_BCl.png # optional. You may leave it blank 
+front_page_image: /images/projects/graph_rep.png # optional. You may leave it blank 
 members:
 - Mustafa Coskun
 - Mehmet Koyuturk (CWRU)

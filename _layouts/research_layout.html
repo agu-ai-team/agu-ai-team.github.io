@@ -5,98 +5,39 @@ layout: default
 {{ content }}
 
 <h1> Projects </h1>
+Funded projects are listes below:
 {% assign type = "project" %}
-{% assign research_area = "CV" %}
-{% assign cv_projects = site.projects | where: "research_area", research_area | where: "type", type | first %}
-{% if cv_projects.research_area %}
-<h2> Computer Vision </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "CV" and project.type == "project" %}
-			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
-	</div>
-</div>
-{% endif %}
 
-
-<h2> Bioinformatics </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "BI" and project.type == "project"%}
+{% for category in site.data.research_categories.research_areas %}
+	{% assign projects_in_category = site.projects | where: "research_area", category.abbr | where: "type", type %}
+	{% assign first_project_in_category = projects_in_category | first %}
+	{% if first_project_in_category.research_area %}
+	<h2> {{ category.full_name }}</h2>
+	<div class="container-fluid">
+		<div class="row"> 
+		{% for project in projects_in_category %}
 			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
+		{% endfor %}
+		</div>
 	</div>
-</div>
-
-<h2> Machine Learning </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "ML" and project.type == "project"%}
-			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
-	</div>
-</div>
-
-<h2> Network </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "NT" and project.type == "project"%}
-			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
-	</div>
-</div>
+	{% endif %}
+{% endfor %}
 
 
 <h1> Research </h1>
+{% assign type = "research" %}
 
-<h2> Computer Vision </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "CV" and project.type == "research" %}
+{% for category in site.data.research_categories.research_areas %}
+	{% assign projects_in_category = site.projects | where: "research_area", category.abbr | where: "type", type %}
+	{% assign first_project_in_category = projects_in_category | first %}
+	{% if first_project_in_category.research_area %}
+	<h2> {{ category.full_name }}</h2>
+	<div class="container-fluid">
+		<div class="row"> 
+		{% for project in projects_in_category %}
 			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
+		{% endfor %}
+		</div>
 	</div>
-</div>
-<h2> Bioinformatics </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "BI" and project.type == "research"%}
-			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
-	</div>
-</div>
-
-<h2> Machine Learning </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "ML" and project.type == "research"%}
-			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
-	</div>
-</div>
-
-<h2> Network </h2>
-<div class="container-fluid">
-	<div class="row"> 
-	{% for project in site.projects %}
-		{% if project.research_area == "NT" and project.type == "research"%}
-			{% include inject_project_card.html %}
-		{% endif %}
-	{% endfor %}
-	</div>
-</div>
+	{% endif %}
+{% endfor %}

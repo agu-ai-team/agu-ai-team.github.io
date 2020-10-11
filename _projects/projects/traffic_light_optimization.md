@@ -2,7 +2,7 @@
 research_area: CV # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
 type: project # project: This is a funded project., research: this is a research or thesis
 title: "Traffic Light Optimization"
-front_page_image: /images/pubpic/Pub_CeCoIn5.png # optional. You may leave it blank 
+front_page_image: /images/projects/traffic_lights.jpg # optional. You may leave it blank 
 members:
 - Sultan Kubra Kilic
 - Adam Thair

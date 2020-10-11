@@ -2,7 +2,7 @@
 research_area: BI # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
 type: research # project: This is a funded project., research: this is a research or thesis
 title: "Cancer Stratification Problem"
-front_page_image: /images/pubpic/SCAUweb.jpg # optional. You may leave it blank 
+front_page_image: /images/projects/gene_expression.jpg # optional. You may leave it blank 
 members:
 - Pinar Guner
 - Burcu Gungor
