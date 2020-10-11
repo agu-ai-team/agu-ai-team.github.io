@@ -1,26 +1,20 @@
 <!-- This adds a project card in research page. Before calling this a "project" variable must be assigned from site.projects database -->
-<div class="col-md-6 pl-0">
- <div class="card mb-3">
- 	<div class="row">
-	    <div class="col-md-4">
-	    	<div class="card-body">
-	      {% if project.front_page_image %}<img src="{{- project.front_page_image -}}" class="card-img img-thumbnail" alt="..." style="object-fit: cover; object-position: center;">{% endif %}
-	  </div>
-	    </div>
-	    <div class="col-md-8">
-	      <div class="card-body">
-	        <h5 class="card-title">{{- project.title -}}</h5>
-	        {% if project.front_page_abstract %} <p class="card-text">{{- project.front_page_abstract -}}</p>{% endif %}
-	        <a href="{{project.url}}" class="btn btn-primary">Read more</a>
-	      </div>
-	    </div>
-	    <div class="col-md-8 ml-auto">
-	    	{% for member_name in project.members %}
-	    		{% include inject_person_name_and_photo.html %}
-			{% endfor %}
-	    </div>
-	</div>
+
+<div class="col  pl-0">
+ <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{- project.title -}}</h5>
+    {% if project.front_page_abstract %} <p class="card-text">
+{% if project.front_page_image %}<img src="{{- project.front_page_image -}}" class="w-50 card-img-top img-thumbnail  float-left mr-3" alt="..." style="object-fit: cover; object-position: top; max-width: 300px; max-height: 300px;">{% endif %}
+     {{- project.front_page_abstract -}}</p>{% endif %}
+    <a href="{{project.url}}" class="btn btn-primary">Read more</a>
+  </div>
+
+    <div class="col-12 ml-auto">
+    	{% for member_name in project.members %}
+    		{% include inject_person_name_and_photo.html %}
+		{% endfor %}
+    </div>
+	
   </div>
 </div>
-
-	

@@ -5,7 +5,4 @@ excerpt: "AGU AI -- Research"
 sitemap: false
 permalink: /research/
 ---
-
-# Research
-
-Our overarching goal is to 
+Our overarching goal is to foster and promote AI research at AGU (Abdullah Gul University).
