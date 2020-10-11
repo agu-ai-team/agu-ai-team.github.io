@@ -8,11 +8,13 @@
     <div class="carousel-inner">
       {% for item in site.data.carousel %}
       <div class="carousel-item {% if forloop.first == true %} active {% endif %}">
+        <a {% if item.post_page %} href="{{ item.post_page }}" {% endif %}>
         <img src="{{ site.url }}{{ site.baseurl }}{{item.img}}" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block w-100" style="background: rgba(26, 10, 40, 0.8); left: 0;">
           <h5>{{item.caption_title}}</h5>
           <p>{{item.caption_content}}</p>
         </div>
+        </a>
       </div>
       {% endfor %}
       
