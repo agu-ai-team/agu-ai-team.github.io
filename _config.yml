@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Our overarching goal is to foster and promote AI research at AGU (Abdullah Gul University). AGU AI is a consolidated research group involving Computer Vision, Machine Learning - Artificial Intelligence, Biomedical Image Processing, Bioinformatics and Network researchers from the Abdullah Gul University.
 baseurl: ""
 url: "https://ai.agu.edu.tr"
-author: Kasim Tasdemir
+author: ai_group_agu
 twitter:
   username: ai_group_agu
   card: summary
