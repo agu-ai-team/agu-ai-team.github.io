@@ -1,7 +1,7 @@
 ---
 title: "AGU AI - Home"
 layout: home_layout
-excerpt: "AGU AI Research at Abdullah Gul University."
+excerpt: "Artificial Intelligence Research at Abdullah Gul University."
 permalink: /
 ---
 AGU AI is a consolidated research group involving Computer Vision, Machine Learning - Artificial Intelligence, Biomedical Image Processing, Bioinformatics and Network researchers from the [Abdullah Gul University](http://www.agu.edu.tr). It was started in 2020.

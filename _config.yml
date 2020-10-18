@@ -7,11 +7,18 @@
 
 # Site settings
 title: AGU AI
+tagline: Artificial Intelligence Research At Abdullah Gul University
 email: ai@agu.edu.tr
 description: > # this means to ignore newlines until "baseurl:"
-  AI research team at AGU
+  Our overarching goal is to foster and promote AI research at AGU (Abdullah Gul University). AGU AI is a consolidated research group involving Computer Vision, Machine Learning - Artificial Intelligence, Biomedical Image Processing, Bioinformatics and Network researchers from the Abdullah Gul University.
 baseurl: ""
-url: "https://agu-ai-team.github.io"
+url: "https://ai.agu.edu.tr"
+author: Kasim Tasdemir
+twitter:
+  username: ai_group_agu
+  card: summary
+logo: /images/AGU_AI_logo.png
+google_site_verification: v6tuyVzjyCT8_yy-GJmHPsydRLmV2ZexfaBUoHkdFHY
 
 # Change environment to production before deploying.  
 # If it is "development", google analytics wont work, a warning will appear on top.
