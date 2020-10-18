@@ -55,9 +55,9 @@ kramdown:
 
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-octicons
+  - jekyll-sitemap
 collections:
   people:
     output: true
