@@ -1,5 +1,5 @@
 ---
-name: "Burcu Gungor"
+name: "Burcu Bakir Gungor"
 photo: /images/people/burcu.jpg # optional. You may leave it blank 
 status: Assistant Profesor # Professor, Student, ... 
 email: burcu.gungor@agu.edu.tr

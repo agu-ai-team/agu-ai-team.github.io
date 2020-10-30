@@ -5,7 +5,7 @@ title: "Cancer Stratification Problem"
 front_page_image: /images/projects/gene_expression.jpg # optional. You may leave it blank 
 members:
 - Pinar Guner
-- Burcu Gungor
+- Burcu Bakir Gungor
 - Mustafa Coskun
 sort_order: 3 
 layout: project_layout

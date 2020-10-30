@@ -65,6 +65,7 @@ collections:
   projects:
     output: true
     sort_by: sort_order
+exclude: ['_projects/research/Cancer_Subtype_Stratification.md']
 
 
 
