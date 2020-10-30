@@ -38,7 +38,21 @@ layout: default
 <div class="card-group container-fluid mx-0 px-0">
 {% assign people = site.people | sort: "sort_order" %}
 {% for member in people  %}
-{% if member.sort_order > 5 %}
+{% if member.sort_order > 5  and member.sort_order <= 6%}
+<div class="p-2 d-flex justify-content-center">
+{% include add_member_info.html %}
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+
+<h2>Collaborators</h2>
+<div class="row">
+<div class="card-group container-fluid mx-0 px-0">
+{% assign people = site.people | sort: "sort_order" %}
+{% for member in people  %}
+{% if member.sort_order > 6 %}
 <div class="p-2 d-flex justify-content-center">
 {% include add_member_info.html %}
 </div>
