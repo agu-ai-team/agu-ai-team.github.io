@@ -1,7 +1,7 @@
 ---
 research_area: BI # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
 type: research # project: This is a funded project., research: this is a research or thesis
-title: "Cancer Stratification Problem"
+title: "Development of Deep Learning Methodologies for Antimicrobial Peptide Prediction"
 front_page_image: /images/projects/peptide_prediction.jpg # optional. You may leave it blank 
 members:
 - Gulsum Uzut
