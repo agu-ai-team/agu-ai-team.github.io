@@ -1,7 +1,7 @@
 ---
 research_area: ML # CV: Computer Vision, BI: Bioinformatics, NT: Network, ML: Machine Learning
 type: project # project: This is a funded project., research: this is a research or thesis
-title: "Artificial Intelligence Assisted Prognostic Marker Determination from Colonoscopy and Histopathology Images for Colon Polyps"
+title: "Determination of the weight perception of the object to be lifted in preparation of the bionic hand to the activity by brain signals"
 front_page_image: /images/projects/bionic_arm.jpg # optional. You may leave it blank 
 members:
 - Bulent Yilmaz
